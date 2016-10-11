@@ -18,11 +18,11 @@ public class MainActivity extends AppCompatActivity {
 
         // TODO: 10/10/16 Include a Bluetooth state changed listener.
 
-        Button buttonForward = (Button) findViewById(R.id.buttonForward);
-        Button buttonReverse = (Button) findViewById(R.id.buttonReverse);
-        Button buttonLeft = (Button) findViewById(R.id.buttonLeft);
-        Button buttonRight = (Button) findViewById(R.id.buttonRight);
-        Button buttonConfigure = (Button) findViewById(R.id.buttonConfigure);
+        Button buttonForward = (Button) findViewById(R.id.button_forward);
+        Button buttonReverse = (Button) findViewById(R.id.button_reverse);
+        Button buttonLeft = (Button) findViewById(R.id.button_left);
+        Button buttonRight = (Button) findViewById(R.id.button_right);
+        Button buttonConfigure = (Button) findViewById(R.id.button_configure);
 
         buttonForward.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +34,6 @@ public class MainActivity extends AppCompatActivity {
         buttonReverse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
             }
         });
 
