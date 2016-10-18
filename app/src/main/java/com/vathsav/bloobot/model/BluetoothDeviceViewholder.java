@@ -1,6 +1,8 @@
 package com.vathsav.bloobot.model;
 
+import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothSocket;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.view.View;
@@ -8,6 +10,9 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.vathsav.bloobot.R;
+
+import java.io.IOException;
+import java.util.UUID;
 
 /**
  * Created by vathsav on 11/10/16.
@@ -32,15 +37,8 @@ public class BluetoothDeviceViewHolder extends RecyclerView.ViewHolder implement
     @Override
     public void onClick(View view) {
         // TODO: 11/10/16 Attempt to connect to device as a client.
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-
-                } catch (Exception ex) {
-
-                }
-            }
-        }).start();
+//        new ConnectThread(bluetoothDevice).start();
     }
+
+
 }

@@ -32,7 +32,6 @@ public class ConfigurationActivity extends AppCompatActivity {
 
         if (pairedDevices.size() > 0) {
             for (BluetoothDevice bluetoothDevice : pairedDevices) {
-                Toast.makeText(getApplicationContext(), bluetoothDevice.getName(), Toast.LENGTH_SHORT).show();
                 listOfBluetoothDevices.add(new BluetoothDeviceItem(bluetoothDevice));
             }
         }

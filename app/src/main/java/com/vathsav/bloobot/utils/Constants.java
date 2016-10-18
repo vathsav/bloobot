@@ -3,11 +3,16 @@ package com.vathsav.bloobot.utils;
 import android.bluetooth.BluetoothAdapter;
 import android.content.Intent;
 
+import io.palaima.smoothbluetooth.SmoothBluetooth;
+
 /**
  * Created by vathsav on 10/10/16.
  */
 
 public class Constants {
+
+    public static SmoothBluetooth bluetoothDevice;
+
     // Bluetooth configuration variables
     public static final BluetoothAdapter bluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
